@@ -20,9 +20,9 @@ type apiImpl struct {
 	b BModuleAPI
 }
 
-func (a *apiImpl) Test() string {
-	aRet := a.a.TestA()
-	bRet := a.b.TestB()
+func (api *apiImpl) Test() string {
+	aRet := api.a.TestA()
+	bRet := api.b.TestB()
 	return fmt.Sprintf("%s\n%s", aRet, bRet)
 }
 
